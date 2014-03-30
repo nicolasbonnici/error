@@ -9,7 +9,7 @@ namespace bundles\error\Controllers;
  *
  * @author niko <nicolasbonnici@gmail.com>
  */
-class ErrorController extends \Library\Core\Controller {
+class HomeController extends \Library\Core\Controller {
 
     /**
      * @todo defined class constant pour http error codes

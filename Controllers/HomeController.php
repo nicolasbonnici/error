@@ -1,5 +1,4 @@
 <?php
-
 namespace bundles\error\Controllers;
 
 /**
@@ -9,21 +8,23 @@ namespace bundles\error\Controllers;
  *
  * @author niko <nicolasbonnici@gmail.com>
  */
-class HomeController extends \Library\Core\Controller {
+class HomeController extends \Library\Core\Controller
+{
 
     /**
+     *
      * @todo defined class constant pour http error codes
      */
+    public function __preDispatch()
+    {}
 
-    public function __preDispatch() {}
-
-    public function __postDispatch() {}
+    public function __postDispatch()
+    {}
 
     public function indexAction()
     {
         $this->render('home/index.tpl');
     }
-
 }
 
 ?>

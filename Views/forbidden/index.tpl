@@ -6,10 +6,8 @@
             <p>Vous devez être connecté pour visualisé ce contenu. Merci de vous reconnecter.</p>
             {% if sRedirectUrl|Exists %}
             <p>
-                <a
-                    href="{{sRedirectUrl}}"
-                    class="btn btn-lg btn-primary"
-                    title="Connection à votre compte"> Connection </a>
+                <a href="{{sRedirectUrl}}" class="btn btn-lg btn-primary" title="Connection à votre compte">
+                    Connection </a>
             </p>
             {% endif %}
         </div>

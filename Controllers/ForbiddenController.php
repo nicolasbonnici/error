@@ -28,8 +28,8 @@ class ForbiddenController extends HomeController
      */
     public function indexAction()
     {
-        if (! empty($this->_params['redirect'])) {
-            $this->_view['sRedirectUrl'] = $this->decodeRedirectUrl($this->_params['redirect']);
+        if (! empty($this->aParams['redirect'])) {
+            $this->aView['sRedirectUrl'] = $this->decodeRedirectUrl($this->aParams['redirect']);
         }
         
         $this->render('forbidden/index.tpl');

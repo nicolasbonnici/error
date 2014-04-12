@@ -23,7 +23,7 @@ class HomeController extends \Library\Core\Controller
 
     public function indexAction()
     {
-        $this->render('home/index.tpl');
+        $this->oView->render($this->aView, 'home/index.tpl');
     }
 }
 

@@ -32,7 +32,7 @@ class ForbiddenController extends HomeController
             $this->aView['sRedirectUrl'] = $this->decodeRedirectUrl($this->aParams['redirect']);
         }
         
-        $this->render('forbidden/index.tpl');
+        $this->oView->render($this->aView, 'forbidden/index.tpl');
     }
     
     // @todo 404,301,302 errors methods....

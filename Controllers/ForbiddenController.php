@@ -10,7 +10,7 @@ use bundles\auth\Controllers\HomeController;
  *
  * @author niko <nicolasbonnici@gmail.com>
  */
-class ForbiddenController extends HomeController
+class ForbiddenController extends ErrorController
 {
 
     /**
@@ -31,11 +31,10 @@ class ForbiddenController extends HomeController
         if (! empty($this->aParams['redirect'])) {
             $this->aView['sRedirectUrl'] = $this->decodeRedirectUrl($this->aParams['redirect']);
         }
-        
+
         $this->oView->render($this->aView, 'forbidden/index.tpl');
     }
-    
+
     // @todo 404,301,302 errors methods....
 }
 
-?>

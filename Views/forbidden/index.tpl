@@ -2,12 +2,12 @@
 <div class="row">
     <div class="col-md-12 column">
         <div class="alert alert-error">
-            <h1>Forbidden access</h1>
-            <p>Vous devez être connecté pour visualisé ce contenu. Merci de vous reconnecter.</p>
+            <h1>{{tr['forbidden']}}</h1>
+            <p>{{tr['forbidden_info']}}</p>
             {% if sRedirectUrl|Exists %}
             <p>
                 <a href="{{sRedirectUrl}}" class="btn btn-lg btn-primary" title="Connection à votre compte">
-                    Connection </a>
+                    {{tr['login']}} </a>
             </p>
             {% endif %}
         </div>

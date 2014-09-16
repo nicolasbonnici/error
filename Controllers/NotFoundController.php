@@ -4,13 +4,13 @@ namespace bundles\error\Controllers;
 use bundles\auth\Controllers\HomeController;
 
 /**
- * ForbiddenController handle 301 HTTP code
+ * NotFoundController handle 404 HTTP error code
  *
  * Manage HTTP ForbiddenController error redirection 403
  *
  * @author niko <nicolasbonnici@gmail.com>
  */
-class ForbiddenController extends \Library\Core\Controller
+class NotFoundController extends \Library\Core\Controller
 {
 
     /**
@@ -32,7 +32,7 @@ class ForbiddenController extends \Library\Core\Controller
             $this->aView['sRedirectUrl'] = $this->decodeRedirectUrl($this->aParams['redirect']);
         }
 
-        $this->oView->render($this->aView, 'forbidden/index.tpl');
+        $this->oView->render($this->aView, 'notfound/index.tpl');
     }
 
     // @todo 404,301,302 errors methods....

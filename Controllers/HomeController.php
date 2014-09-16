@@ -1,6 +1,8 @@
 <?php
 namespace bundles\error\Controllers;
 
+use Library\Core\Http;
+
 /**
  * ErrorController
  *
@@ -16,7 +18,9 @@ class HomeController extends \Library\Core\Controller
      * @todo defined class constant pour http error codes
      */
     public function __preDispatch()
-    {}
+    {
+    	$oHttp = new Http();
+    }
 
     public function __postDispatch()
     {}

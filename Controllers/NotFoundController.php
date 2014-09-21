@@ -1,8 +1,6 @@
 <?php
 namespace bundles\error\Controllers;
 
-use bundles\auth\Controllers\HomeController;
-
 /**
  * NotFoundController handle 404 HTTP error code
  *
